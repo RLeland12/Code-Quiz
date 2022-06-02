@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./style.css">
+        <title>Quiz</title>
+    </head>
+    
+    <!--needs high score-->
+<body>
+<meta>
+    <header id ="header">
+        <h2 id ="highScores"><button id="highScoresButton">highScores</button></h2>
+        <div id="time-section">
+            <div id="timezone">
+              <p id="time"></p>
+            </div>
+          </div> 
+    </header>
+
+    <main id="main">
+        <h1 id="mainHeader">Timed Quiz Challenge</h1>
+        <p id="introParagraph"> When you hit the "Start" button the timer will begin and You will have 30 seconds to answer as many questions as you can.
+            Incorrect answers result in the loss of 5 seconds on the timer. The total amount of correct answers will be displayed.
+        </p>
+        
+    </main>
+
+    <div id="quiz-box">
+        <h2 id="questions"></h2>
+        <h3 id="newQuestion"></h3>
+        </h3>
+
+        <div id=staryDiv>
+        <button id="startQuiz" class="buttonCSS">Start the Quiz</button>
+        </div>
+
+<!-- 
+        <div class="card" id="quiz" style="width: 18rem;">
+            <div id="question"></div>
+        <div id=possibleAnswers>
+        <button id="Answer1" class="answerbuttonCSS">Answer 1</button>
+        <button id="Answer2" class="answerbuttonCSS">Answer 2</button>
+        <button id="Answer3" class="answerbuttonCSS">Answer 3</button>
+        <button id="Answer4" class="answerbuttonCSS">Answer 4</button>
+        </div> -->
+
+        <div class="card" id="quiz" style="width: 18rem;">
+            <div id="question"></div>
+            <div id="possibleAnswers"></div>
+                <div class="choice" id="Answer1"></div>
+                <div class="choice" id="Answer2"></div>
+                <div class="choice" id="Answer3"></div>
+                <div class="choice" id="Answer4"></div>
+          </div>
+
+        <div id="singnUp">
+        <h3 id="playersName">Enter Your name for the leaderboards</h3>
+        <form id="playerForm">
+            <input type="text" id="nameText" placeholder="Name">
+        </form>
+        <button type="submit" form="playerForm" class="buttonCSS" value="submit" id="enterScore">Submit</button>
+        
+        <div>
+            <h1>High Score</h1>
+            <p id="hsInit"></p>
+            <p id="highScore"></p>
+          </div>
+    
+        <div id="score">
+            Score: 
+        </div>
+    </div>
+
+
+    
+    
+</meta>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    </body>
+
+</html>
